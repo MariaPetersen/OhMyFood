@@ -62,12 +62,16 @@ p {
   display: flex;
   flex-direction: column;
   box-shadow: 0px 2px 5px rgb(205, 205, 205);
+  margin: 7px;
+  border-radius: 20px;
 }
 .card__image {
   object-fit: cover;
   overflow: hidden;
   flex: 2;
   position: relative;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
 }
 .card__image--img {
   height: auto;
@@ -134,8 +138,7 @@ p {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-around;
-  height: 400px;
+  padding: 30px 0px 50px 0px;
 }
 .guide .title--left {
   align-self: start;
@@ -145,10 +148,12 @@ p {
   flex-direction: row;
   align-items: center;
   width: 90%;
+  max-width: 300px;
   height: 70px;
   background-color: #f7f7f7;
   border-radius: 20px;
   box-shadow: 0px 2px 5px rgb(205, 205, 205);
+  margin: 20px 5px 20px 5px;
 }
 .guide__stage__step {
   background-color: #9356DC;
