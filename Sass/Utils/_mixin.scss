@@ -1,0 +1,13 @@
+
+
+@mixin background-color($color, $amount) {
+    background-color: darken($color, $amount);
+}
+
+@mixin shadow($color) {
+    box-shadow: 0px 2px 5px $color;   
+}
+
+@mixin pastel($color) {
+    $color: saturation($color, 30%);
+}

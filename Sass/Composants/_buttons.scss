@@ -1,0 +1,13 @@
+
+.button{
+    background: linear-gradient(to bottom right, $color-secondary, $color-primary);
+    width: fit-content;
+    border: none;
+    border-radius: 25px;
+    @include shadow($color-shadow);
+    color: white;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 20px;
+    padding-right: 20px;
+}

@@ -1,3 +1,137 @@
+/* COLORS*/
+/*SHADOWS*/
+/*BORDER RADIUS*/
+@font-face {
+  font-family: "shrikhandregular";
+  src: url("./fonts/shrinkhand_webkit/shrikhand-regular-webfont.eot");
+  src: url("./fonts/shrinkhand_webkit/shrikhand-regular-webfont.eot?#iefix") format("embedded-opentype"), url("./fonts/shrinkhand_webkit/shrikhand-regular-webfont.woff2") format("woff2"), url("./fonts/shrinkhand_webkit/shrikhand-regular-webfont.woff") format("woff"), url("./fonts/shrinkhand_webkit/shrikhand-regular-webfont.ttf") format("truetype"), url("./fonts/shrinkhand_webkit/shrikhand-regular-webfont.svg#shrikhandregular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "shrikhandregular";
+  src: url("./fonts/shrinkhand_webkit/shrikhand-regular-webfont.eot");
+  src: url("./fonts/shrinkhand_webkit/shrikhand-regular-webfont.eot?#iefix") format("embedded-opentype"), url("./fonts/shrinkhand_webkit/shrikhand-regular-webfont.woff2") format("woff2"), url("./fonts/shrinkhand_webkit/shrikhand-regular-webfont.woff") format("woff"), url("./fonts/shrinkhand_webkit/shrikhand-regular-webfont.ttf") format("truetype"), url("./fonts/shrinkhand_webkit/shrikhand-regular-webfont.svg#shrikhandregular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+* {
+  font-family: "Roboto", sans-serif;
+}
 
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: auto;
+}
+
+p {
+  font-size: 14px;
+}
+
+.title--center {
+  text-align: center;
+  margin-right: 40px;
+  margin-left: 40px;
+}
+.title--left {
+  text-align: left;
+  margin-left: 10px;
+}
+
+.button {
+  background: linear-gradient(to bottom right, #FF79DA, #9356DC);
+  width: fit-content;
+  border: none;
+  border-radius: 25px;
+  box-shadow: 0px 2px 5px rgb(205, 205, 205);
+  color: white;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.header {
+  margin: 0px;
+  margin-bottom: 3px;
+  display: flex;
+  width: 100%;
+  box-shadow: 0px 3px 3px rgb(205, 205, 205);
+}
+.header__logo {
+  margin: auto;
+  width: 200px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.localisation {
+  display: flex;
+  background-color: #e5e5e5;
+  height: 30px;
+  align-items: center;
+  justify-content: center;
+  height: 40px;
+}
+.localisation__icon {
+  margin-right: 20px;
+}
+.localisation__town {
+  width: fit-content;
+}
+
+.pageTop {
+  background-color: #f7f7f7;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 30px;
+  padding-bottom: 50px;
+}
+.pageTop__description {
+  text-align: center;
+  font-weight: lighter;
+  margin-bottom: 20px;
+}
+
+.guide {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  height: 400px;
+}
+.guide .title--left {
+  align-self: start;
+}
+.guide__stage {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 90%;
+  height: 70px;
+  background-color: #f7f7f7;
+  border-radius: 20px;
+  box-shadow: 0px 2px 5px rgb(205, 205, 205);
+}
+.guide__stage__step {
+  background-color: #9356DC;
+  font-size: 14px;
+  color: white;
+  border-radius: 45px;
+  width: 20px;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: -10px;
+}
+.guide__stage__icon {
+  color: #8e8e8e;
+  margin: 15px;
+}
 
 /*# sourceMappingURL=style.css.map */

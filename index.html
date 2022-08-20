@@ -6,40 +6,44 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width" />
     <title>OhMyFood</title>
+    <script src="https://kit.fontawesome.com/d2356a7c9a.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&display=swap" rel="stylesheet"> 
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
 
-    <header>
-        <img src="./images/logo/ohmyfood.png" alt="OhMyFood logo" class="logo--header">
+    <header class="header">
+        <img src="./images/logo/ohmyfood.png" alt="OhMyFood logo" class="header__logo">
     </header>
 
     <div class="localisation">
-        <i class="localisation__icon"></i>
-        <p class="localisation__town"></p>
+        <i class="fa-solid fa-location-dot localisation__icon"></i>
+        <p class="localisation__town">Paris, Belleville</p>
     </div>
     <div class="pageTop">
         <h2 class="title title--center">Réservez le menu qui vous convient</h2>
-        <div class="description">Décrouvrez des restaurants d'exception, séléctionnés par nos soins</div>
+        <div class="pageTop__description">Décrouvrez des restaurants d'exception, séléctionnés par nos soins</div>
         <button class="button">Explorer nos restaurants</button>
     </div>
 
     <section class="guide">
         <h2 class="title title--left">Fonctionnement</h2>
         <div class="guide__stage">
-            <div class="guide__stage__step"></div>
-            <i class="guide__stage__icon"></i>
-            <p class="guide__stage__text"></p>
+            <div class="guide__stage__step">1</div>
+            <i class="fa-solid fa-mobile-screen-button guide__stage__icon"></i>
+            <p class="guide__stage__text">Choississez un restaurant</p>
         </div>
         <div class="guide__stage">
-            <div class="guide__stage__step"></div>
-            <i class="guide__stage__icon"></i>
-            <p class="guide__stage__text"></p>
+            <div class="guide__stage__step">2</div>
+            <i class="fa-solid fa-list-ul guide__stage__icon"></i>
+            <p class="guide__stage__text">Composer votre menu</p>
         </div>
-        <div class="guide__stage">
-            <div class="guide__stage__step"></div>
-            <i class="guide__stage__icon guide__stage__icon--purple"></i>
-            <p class="guide__stage__text"></p>
+        <div class="guide__stage guide__stage--purple">
+            <div class="guide__stage__step">3</div>
+            <i class="fa-solid fa-store guide__stage__icon guide__stage__icon--purple"></i>
+            <p class="guide__stage__text">Dégustez au restaurant</p>
         </div>
     </section>
 
@@ -103,8 +107,8 @@
         <img src="./images/logo/ohmyfood.png" alt="Ohmyfood" class="logo--footer">
         <div class="footer">
             <ul>
-                <li class="footer__link--bold"><i class="footer__link--icon">Proposer un restaurant</i></li>
-                <li class="footer__link--bold"><i class="footer__link--icon">Devenir partenaire</i></li>
+                <li class="footer__link--bold"><i class="footer__link--icon"></i>Proposer un restaurant</li>
+                <li class="footer__link--bold"><i class="footer__link--icon"></i>Devenir partenaire</li>
                 <li class="footer__link">Mentions légales</li>
                 <li class="footer__link">Contact</li>
             </ul>
