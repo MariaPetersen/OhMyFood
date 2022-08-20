@@ -1,15 +1,22 @@
 
 /* COLORS*/
 $color-primary: #9356DC;
-$color-secondary: #FF79DA;
+$color-secondary: hsl(317, 100%, 74%);
 $color-tertiary: #99E2D0;
 
 $background-primary:#f7f7f7;
 
 $icon_color: #8e8e8e;
 
+$pastel: #f6f0ff;
+
+$new-text: darken($color-tertiary, 40%);
+
 /*SHADOWS*/
 $color-shadow: rgb(205, 205, 205);
 
 /*BORDER RADIUS*/
 $card-border: 20px;
+
+/*PADDING*/
+$padding-section: 30px 0px 50px 0px;

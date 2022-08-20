@@ -1,0 +1,33 @@
+.card{
+    max-width: 300px;
+    width: 90%;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    @include shadow($color-shadow);
+    &__image{
+        object-fit: cover;
+        overflow: hidden;
+        flex: 2;
+        position: relative;
+        
+        &--img{
+            height: auto;
+            width: 100%;
+            position: relative;
+        }
+        &__new{
+            position: absolute;
+            top: 5px;
+            right: 15px;
+            background-color: $color-tertiary;
+            color: $new-text;
+            padding: 5px 10px 5px 10px;
+            border-radius: 3px;
+            font-size: 12px;
+        }
+    }
+    &__lower{
+        flex:1;
+    }
+}

@@ -1,6 +1,7 @@
 /* COLORS*/
 /*SHADOWS*/
 /*BORDER RADIUS*/
+/*PADDING*/
 @font-face {
   font-family: "shrikhandregular";
   src: url("./fonts/shrinkhand_webkit/shrikhand-regular-webfont.eot");
@@ -42,7 +43,7 @@ p {
 }
 
 .button {
-  background: linear-gradient(to bottom right, #FF79DA, #9356DC);
+  background: linear-gradient(to bottom right, hsl(317deg, 100%, 74%), #9356DC);
   width: fit-content;
   border: none;
   border-radius: 25px;
@@ -52,6 +53,39 @@ p {
   padding-bottom: 15px;
   padding-left: 20px;
   padding-right: 20px;
+}
+
+.card {
+  max-width: 300px;
+  width: 90%;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0px 2px 5px rgb(205, 205, 205);
+}
+.card__image {
+  object-fit: cover;
+  overflow: hidden;
+  flex: 2;
+  position: relative;
+}
+.card__image--img {
+  height: auto;
+  width: 100%;
+  position: relative;
+}
+.card__image__new {
+  position: absolute;
+  top: 5px;
+  right: 15px;
+  background-color: #99E2D0;
+  color: #278870;
+  padding: 5px 10px 5px 10px;
+  border-radius: 3px;
+  font-size: 12px;
+}
+.card__lower {
+  flex: 1;
 }
 
 .header {
@@ -88,8 +122,7 @@ p {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-top: 30px;
-  padding-bottom: 50px;
+  padding: 30px 0px 50px 0px;
 }
 .pageTop__description {
   text-align: center;
@@ -132,6 +165,20 @@ p {
 .guide__stage__icon {
   color: #8e8e8e;
   margin: 15px;
+}
+.guide__stage__icon--purple {
+  color: #9356DC;
+}
+.guide__stage--purple {
+  background-color: #f6f0ff;
+}
+
+.restaurants {
+  background-color: #f7f7f7;
+  padding: 30px 0px 50px 0px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 /*# sourceMappingURL=style.css.map */

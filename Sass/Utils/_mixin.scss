@@ -9,5 +9,5 @@
 }
 
 @mixin pastel($color) {
-    $color: saturation($color, 30%);
+    background-color: scale-color($color, $saturation:100%);
 }
