@@ -4,20 +4,24 @@
 /*PADDING*/
 @font-face {
   font-family: "shrikhandregular";
-  src: url("./fonts/shrinkhand_webkit/shrikhand-regular-webfont.eot");
-  src: url("./fonts/shrinkhand_webkit/shrikhand-regular-webfont.eot?#iefix") format("embedded-opentype"), url("./fonts/shrinkhand_webkit/shrikhand-regular-webfont.woff2") format("woff2"), url("./fonts/shrinkhand_webkit/shrikhand-regular-webfont.woff") format("woff"), url("./fonts/shrinkhand_webkit/shrikhand-regular-webfont.ttf") format("truetype"), url("./fonts/shrinkhand_webkit/shrikhand-regular-webfont.svg#shrikhandregular") format("svg");
+  src: url("../../fonts/shrinkhand_webkit/shrikhand-regular-webfont.eot");
+  src: url("../../fonts/shrinkhand_webkit/shrikhand-regular-webfont.eot?#iefix") format("embedded-opentype"), url("../../fonts/shrinkhand_webkit/shrikhand-regular-webfont.woff2") format("woff2"), url("../../fonts/shrinkhand_webkit/shrikhand-regular-webfont.woff") format("woff"), url("../../fonts/shrinkhand_webkit/shrikhand-regular-webfont.ttf") format("truetype"), url("../../fonts/shrinkhand_webkit/shrikhand-regular-webfont.svg#shrikhandregular") format("svg");
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
   font-family: "shrikhandregular";
-  src: url("./fonts/shrinkhand_webkit/shrikhand-regular-webfont.eot");
-  src: url("./fonts/shrinkhand_webkit/shrikhand-regular-webfont.eot?#iefix") format("embedded-opentype"), url("./fonts/shrinkhand_webkit/shrikhand-regular-webfont.woff2") format("woff2"), url("./fonts/shrinkhand_webkit/shrikhand-regular-webfont.woff") format("woff"), url("./fonts/shrinkhand_webkit/shrikhand-regular-webfont.ttf") format("truetype"), url("./fonts/shrinkhand_webkit/shrikhand-regular-webfont.svg#shrikhandregular") format("svg");
+  src: url("../../fonts/shrinkhand_webkit/shrikhand-regular-webfont.eot");
+  src: url("../../fonts/shrinkhand_webkit/shrikhand-regular-webfont.eot?#iefix") format("embedded-opentype"), url("../../fonts/shrinkhand_webkit/shrikhand-regular-webfont.woff2") format("woff2"), url("../../fonts/shrinkhand_webkit/shrikhand-regular-webfont.woff") format("woff"), url("../../fonts/shrinkhand_webkit/shrikhand-regular-webfont.ttf") format("truetype"), url("../../fonts/shrinkhand_webkit/shrikhand-regular-webfont.svg#shrikhandregular") format("svg");
   font-weight: normal;
   font-style: normal;
 }
 * {
   font-family: "Roboto", sans-serif;
+}
+
+h1 {
+  font-family: "shrikhandregular", sans-serif;
 }
 
 * {
@@ -30,6 +34,10 @@ body {
 
 p {
   font-size: 14px;
+}
+
+a {
+  text-decoration: none;
 }
 
 .title--center {
@@ -61,6 +69,8 @@ p {
   height: 200px;
   display: flex;
   flex-direction: column;
+  text-decoration: none;
+  color: black;
   box-shadow: 0px 2px 5px rgb(205, 205, 205);
   margin: 7px;
   border-radius: 20px;
@@ -68,8 +78,8 @@ p {
 .card__image {
   object-fit: cover;
   overflow: hidden;
-  flex: 2;
   position: relative;
+  flex: 2;
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
 }
@@ -89,7 +99,23 @@ p {
   font-size: 12px;
 }
 .card__lower {
+  display: flex;
   flex: 1;
+  justify-content: space-between;
+}
+.card__lower__text {
+  padding-left: 10px;
+}
+.card__lower__text--name {
+  font-weight: bold;
+  margin-bottom: 0px;
+}
+.card__lower__text--place {
+  margin-top: 7px;
+}
+.card__lower__like {
+  align-self: center;
+  margin-right: 20px;
 }
 
 .header {
@@ -104,6 +130,33 @@ p {
   width: 200px;
   margin-top: 10px;
   margin-bottom: 10px;
+}
+
+.footer {
+  color: white;
+  background-color: #3b3b3b;
+  padding-left: 20px;
+  padding-bottom: 20px;
+}
+.footer__title {
+  margin-top: 0px;
+  font-size: 18px;
+  padding-top: 20px;
+}
+.footer__menu {
+  padding-left: 0px;
+  font-size: 14px;
+}
+.footer__menu__link {
+  margin-top: 5px;
+  list-style: none;
+  padding-left: none;
+  text-decoration: none;
+  color: white;
+}
+.footer__menu__link--icon {
+  width: 5px;
+  margin-right: 20px;
 }
 
 .localisation {
@@ -126,7 +179,7 @@ p {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 30px 0px 50px 0px;
+  padding: 30px 5px 50px 5px;
 }
 .pageTop__description {
   text-align: center;
@@ -138,7 +191,7 @@ p {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 30px 0px 50px 0px;
+  padding: 30px 5px 50px 5px;
 }
 .guide .title--left {
   align-self: start;
@@ -153,7 +206,7 @@ p {
   background-color: #f7f7f7;
   border-radius: 20px;
   box-shadow: 0px 2px 5px rgb(205, 205, 205);
-  margin: 20px 5px 20px 5px;
+  margin: 20px 5px 20px 10px;
 }
 .guide__stage__step {
   background-color: #9356DC;
@@ -180,7 +233,7 @@ p {
 
 .restaurants {
   background-color: #f7f7f7;
-  padding: 30px 0px 50px 0px;
+  padding: 30px 5px 50px 5px;
   display: flex;
   flex-direction: column;
   align-items: center;

@@ -8,6 +8,3 @@
     box-shadow: 0px 2px 5px $color;   
 }
 
-@mixin pastel($color) {
-    background-color: scale-color($color, $saturation:100%);
-}

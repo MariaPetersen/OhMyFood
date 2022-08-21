@@ -12,6 +12,8 @@ $pastel: #f6f0ff;
 
 $new-text: darken($color-tertiary, 40%);
 
+$footer-background: #3b3b3b;
+
 /*SHADOWS*/
 $color-shadow: rgb(205, 205, 205);
 
@@ -19,4 +21,4 @@ $color-shadow: rgb(205, 205, 205);
 $card-border: 20px;
 
 /*PADDING*/
-$padding-section: 30px 0px 50px 0px;
+$padding-section: 30px 5px 50px 5px;
