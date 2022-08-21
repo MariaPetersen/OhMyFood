@@ -127,9 +127,14 @@ a {
 }
 .header__logo {
   margin: auto;
-  width: 200px;
-  margin-top: 10px;
-  margin-bottom: 10px;
+  width: 150px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+.header__arrow {
+  align-self: center;
+  margin-left: 20px;
+  color: black;
 }
 
 .footer {
