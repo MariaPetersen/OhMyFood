@@ -1,0 +1,113 @@
+
+.container{
+    position: relative;
+}
+
+.menuImage{
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    position: relative;
+}
+
+.menu{
+    background-color: $background-primary;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    &__title{
+        margin-top: 0px;
+        margin-bottom: 0px;
+        padding: 20px;
+        padding-top: 35px;
+        padding-bottom: 0px;
+        display: flex;
+        justify-content: space-between;
+        border-top-left-radius: $card-border;
+        border-top-right-radius: $card-border;
+        margin-top: -20px;
+        background-color: $background-primary;
+        position: absolute;
+        width: 100%;
+        font-size: 25px;
+        font-weight: lighter;
+        &--icon{
+            margin-right: 10px;
+        }
+    }
+    
+}
+
+.section{
+    padding-top: 10px;
+    &--top{
+        padding-top: 70px;
+    }
+    &__title{
+        text-transform: uppercase;
+        font-weight: lighter;
+        padding-left: 20px;
+        position: relative;
+        font-size: 16px;
+        margin-bottom: 20px;
+        &::before{
+            content: '';
+            position: absolute;
+            bottom: -5px; left: 20px;
+            width: 40px;
+            height: 3px;
+            background-color: $color-tertiary;
+        }
+    }
+    &__card{
+        background-color: white;
+        border-radius: $card-border;
+        @include shadow($color-shadow);
+        margin: 15px;
+        padding: 10px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        &__animation{
+            display: none;
+        }
+        &__dish{
+                display: flex;
+                flex-direction: column;
+                width: 100%;
+                &--name{
+                    font-weight: 500;
+                    margin: 3px;
+                    font-size: 16px;
+                }
+                &__dcp{
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-between;
+                    width: 100%;
+                    margin: 3px;
+                    height: 19px;
+                    align-items: center;
+                    font-size: 14px;
+                    &--text{
+                        font-weight: lighter;
+                    }
+                    &--price{
+                        font-weight: bold;
+                        margin-right: 15px;
+                    }
+                }
+            }
+        }
+    
+}
+
+.button--order{
+    align-self: center;
+    padding-left: 50px;
+    padding-right: 50px;
+    margin-top: 35px;
+    margin-bottom: 80px;
+    @include shadow($color-shadow);
+}
+
