@@ -66,10 +66,18 @@
         margin: 15px;
         padding: 10px;
         display: flex;
-        flex-direction: row;
+        flex-direction: row-reverse;
         justify-content: space-between;
+        &:active + &__animation {
+            width: 50px;
+            transition: width 60s ease-in-out;
+            display: block;
+        }
         &__animation{
             display: none;
+            width: 0px;
+            height: 100%;
+            background-color: $color-tertiary;
         }
         &__dish{
                 display: flex;

@@ -316,11 +316,19 @@ a {
   margin: 15px;
   padding: 10px;
   display: flex;
-  flex-direction: row;
+  flex-direction: row-reverse;
   justify-content: space-between;
+}
+.section__card:active + .section__card__animation {
+  width: 50px;
+  transition: width 60s ease-in-out;
+  display: block;
 }
 .section__card__animation {
   display: none;
+  width: 0px;
+  height: 100%;
+  background-color: #99E2D0;
 }
 .section__card__dish {
   display: flex;
