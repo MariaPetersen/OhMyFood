@@ -8,6 +8,10 @@
     height: auto;
     overflow: hidden;
     position: relative;
+    @media screen and (min-width: 992px) {
+        max-height: 400px;
+        object-fit: cover;
+    }
 }
 
 .menu{
@@ -40,6 +44,18 @@
 
 .section{
     padding-top: 10px;
+    @media screen and (min-width: 992px){
+        padding-top: 70px;
+        width: 350px;
+    }
+    &--all{
+        display: flex;
+        flex-direction: column;
+        @media screen and (min-width:992px)  {
+            flex-direction: row;
+            justify-content: space-around;
+        }
+    }
     &--top{
         padding-top: 70px;
     }
@@ -64,29 +80,57 @@
         border-radius: $card-border;
         @include shadow($color-shadow);
         margin: 15px;
-        padding: 10px;
         display: flex;
         flex-direction: row-reverse;
         justify-content: space-between;
-        &:active + &__animation {
-            width: 50px;
-            transition: width 60s ease-in-out;
-            display: block;
+        height: 70px;
+        overflow: hidden;
+        padding-left: 3px;
+        &:hover > &__animation {
+            transform: scaleX(1);
+            transition: transform 80ms ease-in-out;
+            display: flex;
+            visibility: visible;
+            transform-origin: right;
+            i {
+                transform: rotate(0turn);
+                transition: transform 70ms ease-in-out 10ms;
+            }
         }
+        
         &__animation{
-            display: none;
-            width: 0px;
-            height: 100%;
+            transform: scaleX(0);
+            visibility: collapse;
+            width: 70px;
+            height: 70px;
+            padding: 0px;
             background-color: $color-tertiary;
+            border-bottom-right-radius: $card-border;
+            border-top-right-radius: $card-border;
+            &--icon{
+                display: flex;
+                margin: auto;
+                align-items: center;
+                color: $color-tertiary;
+                background-color: white;
+                font-size: 14px;
+                font-weight: bolder;
+                padding: 3px;
+                height: 18px;
+                width: 18px;
+                border-radius: 45px;
+                transform: rotate(1turn);
+            }
         }
         &__dish{
-                display: flex;
                 flex-direction: column;
+                margin: 10px;
                 width: 100%;
                 &--name{
                     font-weight: 500;
                     margin: 3px;
                     font-size: 16px;
+                    text-overflow: ellipsis;
                 }
                 &__dcp{
                     display: flex;
@@ -97,8 +141,12 @@
                     height: 19px;
                     align-items: center;
                     font-size: 14px;
+                    text-overflow: ellipsis;
                     &--text{
                         font-weight: lighter;
+                        text-overflow: ellipsis;
+                        overflow: hidden;
+                        height: 17px;
                     }
                     &--price{
                         font-weight: bold;

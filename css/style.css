@@ -258,6 +258,12 @@ a {
   overflow: hidden;
   position: relative;
 }
+@media screen and (min-width: 992px) {
+  .menuImage {
+    max-height: 400px;
+    object-fit: cover;
+  }
+}
 
 .menu {
   background-color: #f7f7f7;
@@ -289,6 +295,22 @@ a {
 .section {
   padding-top: 10px;
 }
+@media screen and (min-width: 992px) {
+  .section {
+    padding-top: 70px;
+    width: 350px;
+  }
+}
+.section--all {
+  display: flex;
+  flex-direction: column;
+}
+@media screen and (min-width: 992px) {
+  .section--all {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+}
 .section--top {
   padding-top: 70px;
 }
@@ -314,31 +336,58 @@ a {
   border-radius: 20px;
   box-shadow: 0px 2px 15px rgb(221, 221, 221);
   margin: 15px;
-  padding: 10px;
   display: flex;
   flex-direction: row-reverse;
   justify-content: space-between;
+  height: 70px;
+  overflow: hidden;
+  padding-left: 3px;
 }
-.section__card:active + .section__card__animation {
-  width: 50px;
-  transition: width 60s ease-in-out;
-  display: block;
+.section__card:hover > .section__card__animation {
+  transform: scaleX(1);
+  transition: transform 80ms ease-in-out;
+  display: flex;
+  visibility: visible;
+  transform-origin: right;
+}
+.section__card:hover > .section__card__animation i {
+  transform: rotate(0turn);
+  transition: transform 70ms ease-in-out 10ms;
 }
 .section__card__animation {
-  display: none;
-  width: 0px;
-  height: 100%;
+  transform: scaleX(0);
+  visibility: collapse;
+  width: 70px;
+  height: 70px;
+  padding: 0px;
   background-color: #99E2D0;
+  border-bottom-right-radius: 20px;
+  border-top-right-radius: 20px;
+}
+.section__card__animation--icon {
+  display: flex;
+  margin: auto;
+  align-items: center;
+  color: #99E2D0;
+  background-color: white;
+  font-size: 14px;
+  font-weight: bolder;
+  padding: 3px;
+  height: 18px;
+  width: 18px;
+  border-radius: 45px;
+  transform: rotate(1turn);
 }
 .section__card__dish {
-  display: flex;
   flex-direction: column;
+  margin: 10px;
   width: 100%;
 }
 .section__card__dish--name {
   font-weight: 500;
   margin: 3px;
   font-size: 16px;
+  text-overflow: ellipsis;
 }
 .section__card__dish__dcp {
   display: flex;
@@ -349,9 +398,13 @@ a {
   height: 19px;
   align-items: center;
   font-size: 14px;
+  text-overflow: ellipsis;
 }
 .section__card__dish__dcp--text {
   font-weight: lighter;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  height: 17px;
 }
 .section__card__dish__dcp--price {
   font-weight: bold;
