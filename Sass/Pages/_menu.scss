@@ -94,7 +94,7 @@
             transform-origin: right;
             i {
                 transform: rotate(0turn);
-                transition: transform 70ms ease-in-out 10ms;
+                transition: transform 400ms ease-in-out 50ms;
             }
         }
         
@@ -119,6 +119,8 @@
                 height: 18px;
                 width: 18px;
                 border-radius: 45px;
+            }
+            & i{
                 transform: rotate(1turn);
             }
         }
@@ -126,11 +128,16 @@
                 flex-direction: column;
                 margin: 10px;
                 width: 100%;
+                min-width: 0px;
                 &--name{
                     font-weight: 500;
                     margin: 3px;
                     font-size: 16px;
                     text-overflow: ellipsis;
+                    text-align: left;
+                    overflow: hidden;
+                    word-break: break-all;
+                    white-space: nowrap;
                 }
                 &__dcp{
                     display: flex;
@@ -142,11 +149,14 @@
                     align-items: center;
                     font-size: 14px;
                     text-overflow: ellipsis;
+                    text-align: left;
+                    white-space: nowrap;
                     &--text{
                         font-weight: lighter;
                         text-overflow: ellipsis;
                         overflow: hidden;
                         height: 17px;
+                        text-align: left;
                     }
                     &--price{
                         font-weight: bold;
