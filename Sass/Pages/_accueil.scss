@@ -1,3 +1,28 @@
+.loadingSpinner{
+    height: 70px;
+    width: 70px;
+    position: absolute;
+    border: solid $spinnerBorder transparent;
+    border-radius: 50px;
+    background: white;
+    background-clip: padding-box;
+    left: 47%;
+    margin-top: 200px;
+    &::before{
+        content: "";
+        position: absolute;
+        top: 0px; right: 0px; bottom: 0px; left: 0px;
+        z-index: -1;
+        margin: -$spinnerBorder;
+        border-radius: inherit;
+        background: $spinnerColor;
+        animation: loading-page $spinnerTime linear forwards;
+    }
+}
+
+.pageBody{
+    animation: appear ease-in 500ms $spinnerTime both;
+}
 
 .localisation{
     display: flex;
@@ -97,6 +122,5 @@
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: center;
-        
     }
 }

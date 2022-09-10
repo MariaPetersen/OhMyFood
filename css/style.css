@@ -2,13 +2,38 @@
 /*SHADOWS*/
 /*BORDER RADIUS*/
 /*PADDING*/
+/*SPINNER*/
+/*MENU APPEAR*/
 @import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
-@keyframes menu-select {
-  0% {
-    transform: scaleX(0);
+@keyframes loading-page {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+  99% {
+    opacity: 1;
   }
   100% {
-    transform: scale(1);
+    opacity: 0;
+    animation-duration: 1ms;
+  }
+}
+@keyframes page-appear {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes appear {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
   }
 }
 * {
@@ -210,6 +235,35 @@ a {
   margin-right: 20px;
 }
 
+.loadingSpinner {
+  height: 70px;
+  width: 70px;
+  position: absolute;
+  border: solid 15px transparent;
+  border-radius: 50px;
+  background: white;
+  background-clip: padding-box;
+  left: 47%;
+  margin-top: 200px;
+}
+.loadingSpinner::before {
+  content: "";
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  z-index: -1;
+  margin: -15px;
+  border-radius: inherit;
+  background: linear-gradient(to bottom right, hsl(317deg, 100%, 74%), #9356DC, #99E2D0);
+  animation: loading-page 2s linear forwards;
+}
+
+.pageBody {
+  animation: appear ease-in 500ms 2s both;
+}
+
 .localisation {
   display: flex;
   background-color: #e5e5e5;
@@ -320,9 +374,10 @@ a {
 
 .menuImage {
   width: 100%;
-  height: auto;
+  max-height: 300px;
   overflow: hidden;
   position: relative;
+  object-fit: cover;
 }
 @media screen and (min-width: 992px) {
   .menuImage {
@@ -371,6 +426,7 @@ a {
   .section {
     padding-top: 70px;
     width: 350px;
+    margin-top: 0px;
   }
 }
 .section--all {
@@ -381,6 +437,7 @@ a {
   .section--all {
     flex-direction: row;
     justify-content: space-around;
+    align-items: flex-start;
   }
 }
 .section--top {
@@ -417,7 +474,8 @@ a {
 }
 .section__card:hover > .section__card__animation {
   transform: scaleX(1);
-  transition: transform 80ms ease-in-out;
+  margin-left: 0px;
+  transition: transform 300ms ease-in-out;
   display: flex;
   transform-origin: right;
 }
@@ -427,12 +485,14 @@ a {
 }
 .section__card__animation {
   transform: scaleX(0);
+  display: flex;
   width: 70px;
   height: 70px;
   padding: 0px;
   background-color: #99E2D0;
   border-bottom-right-radius: 20px;
   border-top-right-radius: 20px;
+  margin-left: -70px;
 }
 .section__card__animation--icon {
   display: flex;
@@ -455,6 +515,7 @@ a {
   margin: 10px;
   width: 100%;
   min-width: 0px;
+  display: flex;
 }
 .section__card__dish--name {
   font-weight: 500;
@@ -489,6 +550,7 @@ a {
 .section__card__dish__dcp--price {
   font-weight: bold;
   margin-right: 15px;
+  margin-left: 2px;
 }
 
 .button--order {
@@ -498,6 +560,22 @@ a {
   margin-top: 35px;
   margin-bottom: 80px;
   box-shadow: 0px 2px 15px #dddddd;
+}
+
+.dishOne {
+  animation: appear 800ms linear 100ms both;
+}
+
+.dishTwo {
+  animation: appear 800ms linear 300ms both;
+}
+
+.dishThree {
+  animation: appear 800ms linear 500ms both;
+}
+
+.dishFour {
+  animation: appear 800ms linear 700ms both;
 }
 
 /*# sourceMappingURL=style.css.map */

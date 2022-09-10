@@ -5,9 +5,10 @@
 
 .menuImage{
     width: 100%;
-    height: auto;
+    max-height: 300px;
     overflow: hidden;
     position: relative;
+    object-fit: cover;
     @media screen and (min-width: 992px) {
         max-height: 400px;
         object-fit: cover;
@@ -48,10 +49,12 @@
     @media screen and (min-width: 768px) {
         width: 500px;
         margin: auto;
+        
     }
     @media screen and (min-width: 992px){
         padding-top: 70px;
         width: 350px;
+        margin-top: 0px;
     }
     &--all{
         display: flex;
@@ -59,6 +62,7 @@
         @media screen and (min-width:992px)  {
             flex-direction: row;
             justify-content: space-around;
+            align-items: flex-start;
         }
     }
     &--top{
@@ -93,7 +97,8 @@
         padding-left: 3px;
         &:hover > &__animation {
             transform: scaleX(1);
-            transition: transform 80ms ease-in-out;
+            margin-left: 0px;
+            transition: transform 300ms ease-in-out;
             display: flex;
             transform-origin: right;
             i {
@@ -104,12 +109,14 @@
         
         &__animation{
             transform: scaleX(0);
+            display: flex;
             width: 70px;
             height: 70px;
             padding: 0px;
             background-color: $color-tertiary;
             border-bottom-right-radius: $card-border;
             border-top-right-radius: $card-border;
+            margin-left: -70px;
             &--icon{
                 display: flex;
                 margin: auto;
@@ -132,6 +139,7 @@
                 margin: 10px;
                 width: 100%;
                 min-width: 0px;
+                display: flex;
                 &--name{
                     font-weight: 500;
                     margin: 3px;
@@ -164,6 +172,7 @@
                     &--price{
                         font-weight: bold;
                         margin-right: 15px;
+                        margin-left: 2px;
                     }
                 }
             }
@@ -180,3 +189,18 @@
     @include shadow($color-shadow);
 }
 
+.dishOne{
+    animation: appear $appearDuration linear 100ms both;
+}
+
+.dishTwo{
+    animation: appear $appearDuration linear 300ms both;
+}
+
+.dishThree{
+    animation: appear $appearDuration linear 500ms both;
+}
+
+.dishFour{
+    animation: appear $appearDuration linear 700ms both;
+}

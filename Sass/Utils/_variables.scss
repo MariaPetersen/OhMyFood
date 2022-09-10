@@ -26,3 +26,11 @@ $card-border: 20px;
 
 /*PADDING*/
 $padding-section: 30px 5px 50px 5px;
+
+/*SPINNER*/
+$spinnerBorder: 15px;
+$spinnerColor: linear-gradient(to bottom right, $color-secondary, $color-primary, $color-tertiary);
+$spinnerTime: 2s;
+
+/*MENU APPEAR*/
+$appearDuration: 800ms;
