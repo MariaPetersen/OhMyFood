@@ -20,14 +20,6 @@
     animation-duration: 1ms;
   }
 }
-@keyframes page-appear {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
 @keyframes appear {
   0% {
     opacity: 0;
@@ -243,8 +235,10 @@ a {
   border-radius: 50px;
   background: white;
   background-clip: padding-box;
-  left: 47%;
-  margin-top: 200px;
+  top: 50%;
+  left: 50%;
+  margin-top: -35px;
+  margin-left: -35px;
 }
 .loadingSpinner::before {
   content: "";
