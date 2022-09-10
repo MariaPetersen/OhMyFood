@@ -218,7 +218,7 @@ a {
 .footer__menu__link {
   margin-top: 5px;
   list-style: none;
-  padding-left: none;
+  padding-left: 0px;
   text-decoration: none;
   color: white;
 }
