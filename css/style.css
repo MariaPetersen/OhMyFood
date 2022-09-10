@@ -2,6 +2,15 @@
 /*SHADOWS*/
 /*BORDER RADIUS*/
 /*PADDING*/
+@import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
+@keyframes menu-select {
+  0% {
+    transform: scaleX(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
 * {
   font-family: "Roboto", sans-serif;
 }
@@ -47,7 +56,7 @@ a {
   width: fit-content;
   border: none;
   border-radius: 25px;
-  box-shadow: 0px 2px 15px rgb(221, 221, 221);
+  box-shadow: 0px 2px 15px #dddddd;
   color: white;
   padding-top: 15px;
   padding-bottom: 15px;
@@ -104,7 +113,7 @@ a {
   flex-direction: column;
   text-decoration: none;
   color: black;
-  box-shadow: 0px 2px 15px rgb(221, 221, 221);
+  box-shadow: 0px 2px 15px #dddddd;
   margin: 7px;
   border-radius: 20px;
 }
@@ -156,7 +165,7 @@ a {
   margin-bottom: 3px;
   display: flex;
   width: 100%;
-  box-shadow: 0px 3px 3px rgb(221, 221, 221);
+  box-shadow: 0px 3px 3px #dddddd;
   position: relative;
   padding-top: 10px;
 }
@@ -244,7 +253,7 @@ a {
   height: 70px;
   background-color: #f7f7f7;
   border-radius: 20px;
-  box-shadow: 0px 2px 15px rgb(221, 221, 221);
+  box-shadow: 0px 2px 15px #dddddd;
   margin: 20px 5px 20px 10px;
 }
 .guide__stage--all {
@@ -397,7 +406,7 @@ a {
 .section__card {
   background-color: white;
   border-radius: 20px;
-  box-shadow: 0px 2px 15px rgb(221, 221, 221);
+  box-shadow: 0px 2px 15px #dddddd;
   margin: 15px;
   display: flex;
   flex-direction: row-reverse;
@@ -410,16 +419,14 @@ a {
   transform: scaleX(1);
   transition: transform 80ms ease-in-out;
   display: flex;
-  visibility: visible;
   transform-origin: right;
 }
 .section__card:hover > .section__card__animation i {
   transform: rotate(0turn);
-  transition: transform 400ms ease-in-out 50ms;
+  transition: transform 400ms ease-in-out 80ms;
 }
 .section__card__animation {
   transform: scaleX(0);
-  visibility: collapse;
   width: 70px;
   height: 70px;
   padding: 0px;
@@ -490,7 +497,7 @@ a {
   padding-right: 50px;
   margin-top: 35px;
   margin-bottom: 80px;
-  box-shadow: 0px 2px 15px rgb(221, 221, 221);
+  box-shadow: 0px 2px 15px #dddddd;
 }
 
 /*# sourceMappingURL=style.css.map */

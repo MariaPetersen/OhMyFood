@@ -95,17 +95,15 @@
             transform: scaleX(1);
             transition: transform 80ms ease-in-out;
             display: flex;
-            visibility: visible;
             transform-origin: right;
             i {
                 transform: rotate(0turn);
-                transition: transform 400ms ease-in-out 50ms;
+                transition: transform 400ms ease-in-out 80ms;
             }
         }
         
         &__animation{
             transform: scaleX(0);
-            visibility: collapse;
             width: 70px;
             height: 70px;
             padding: 0px;
