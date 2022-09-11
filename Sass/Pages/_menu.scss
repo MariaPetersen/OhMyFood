@@ -189,18 +189,6 @@
     @include shadow($color-shadow);
 }
 
-.dishOne{
-    animation: appear $appearDuration linear 100ms both;
-}
-
-.dishTwo{
-    animation: appear $appearDuration linear 300ms both;
-}
-
-.dishThree{
-    animation: appear $appearDuration linear 500ms both;
-}
-
-.dishFour{
-    animation: appear $appearDuration linear 700ms both;
+.dish{
+    @include animation($appearAnimation);
 }

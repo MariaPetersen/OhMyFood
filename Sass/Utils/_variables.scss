@@ -34,3 +34,25 @@ $spinnerTime: 2s;
 
 /*MENU APPEAR*/
 $appearDuration: 800ms;
+$appearDelay: 200ms;
+
+$appearAnimation: (
+    animation-name: "appear",
+    animation-duration: $appearDuration,
+    animation-delay: $appearDelay,
+    animation-timing-function: linear,
+    animation-fill-mode: both
+);
+
+@mixin animation($appearAnimation) {
+    @for $i from 1 through 4 {
+        &--#{$i}{
+            animation: 
+            map-get($appearAnimation, animation-name) 
+            map-get($appearAnimation, animation-duration) 
+            map-get($appearAnimation, animation-timing-function) 
+            map-get($appearAnimation, animation-fill-mode);
+            animation-delay: $appearDelay*$i;
+        }
+    }
+}

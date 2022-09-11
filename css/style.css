@@ -556,20 +556,21 @@ a {
   box-shadow: 0px 2px 15px #dddddd;
 }
 
-.dishOne {
-  animation: appear 800ms linear 100ms both;
+.dish--1 {
+  animation: "appear" 800ms linear both;
+  animation-delay: 200ms;
 }
-
-.dishTwo {
-  animation: appear 800ms linear 300ms both;
+.dish--2 {
+  animation: "appear" 800ms linear both;
+  animation-delay: 400ms;
 }
-
-.dishThree {
-  animation: appear 800ms linear 500ms both;
+.dish--3 {
+  animation: "appear" 800ms linear both;
+  animation-delay: 600ms;
 }
-
-.dishFour {
-  animation: appear 800ms linear 700ms both;
+.dish--4 {
+  animation: "appear" 800ms linear both;
+  animation-delay: 800ms;
 }
 
 /*# sourceMappingURL=style.css.map */
