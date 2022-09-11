@@ -25,7 +25,7 @@
             map-get($appearAnimation, animation-duration) 
             map-get($appearAnimation, animation-timing-function) 
             map-get($appearAnimation, animation-fill-mode);
-            animation-delay: $appearDelay*$i;
+            animation-delay: map-get($appearAnimation, animation-delay)*$i;
         }
     }
 }
