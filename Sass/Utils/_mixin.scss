@@ -21,7 +21,7 @@
     @for $i from 1 through 4 {
         &--#{$i}{
             animation: 
-            map-get($appearAnimation, animation-name) 
+            appear
             map-get($appearAnimation, animation-duration) 
             map-get($appearAnimation, animation-timing-function) 
             map-get($appearAnimation, animation-fill-mode);

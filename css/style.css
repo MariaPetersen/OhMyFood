@@ -561,19 +561,19 @@ a {
 }
 
 .dish--1 {
-  animation: "appear" 800ms linear both;
+  animation: appear 800ms linear both;
   animation-delay: 200ms;
 }
 .dish--2 {
-  animation: "appear" 800ms linear both;
+  animation: appear 800ms linear both;
   animation-delay: 400ms;
 }
 .dish--3 {
-  animation: "appear" 800ms linear both;
+  animation: appear 800ms linear both;
   animation-delay: 600ms;
 }
 .dish--4 {
-  animation: "appear" 800ms linear both;
+  animation: appear 800ms linear both;
   animation-delay: 800ms;
 }
 
