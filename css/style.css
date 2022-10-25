@@ -308,6 +308,12 @@ a {
   box-shadow: 0px 2px 15px #dddddd;
   margin: 20px 5px 20px 10px;
 }
+.guide__stage:hover {
+  background-color: #f6f0ff;
+}
+.guide__stage:hover > .guide__stage__icon {
+  color: #9356DC;
+}
 .guide__stage--all {
   width: 100%;
   margin: auto;
@@ -337,12 +343,6 @@ a {
 .guide__stage__icon {
   color: #8e8e8e;
   margin: 15px;
-}
-.guide__stage__icon--purple {
-  color: #9356DC;
-}
-.guide__stage--purple {
-  background-color: #f6f0ff;
 }
 
 .restaurants {

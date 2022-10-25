@@ -70,6 +70,12 @@
         border-radius: $card-border;
         @include shadow($color-shadow);
         margin: 20px 5px 20px 10px;
+        &:hover{
+            background-color: $pastel;
+            & > .guide__stage__icon{
+                color: $color-primary;
+            }
+        }
         &--all{
             width: 100%;
             margin: auto;
@@ -98,12 +104,6 @@
         &__icon{
             color:$icon_color;
             margin: 15px;
-            &--purple{
-                color: $color-primary;
-            }
-        }
-        &--purple{
-            background-color: $pastel;
         }
     }
 }
